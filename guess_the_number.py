@@ -7,7 +7,7 @@ class DifficultyLevel:
         self.lower_bound = lower_bound
         self.upper_bound = upper_bound
 
-# Define difficulty levels with their respective ranges
+# Difficulty levels with their respective ranges
 EASY = DifficultyLevel("Easy", 1, 50)
 MEDIUM = DifficultyLevel("Medium", 1, 100)
 HARD = DifficultyLevel("Hard", 1, 200)
@@ -64,6 +64,12 @@ def select_difficulty_level():
         except ValueError:
             print("Invalid input. Please enter a number.")
 
+def calculate_score(difficulty, num_attempts):
+    base_score = difficulty.upper_bound // 10  # Base score based on the range
+    max_score = 1000  # Max possible score
+    score = max(0, max_score - num_attempts * base_score)
+    return score
+
 def main():
     print("Welcome to Guess the Number - AI Edition!")
     difficulty = select_difficulty_level()
@@ -94,9 +100,12 @@ def main():
             lower_bound = guess + 1
         else:  # user_response == "C"
             print("AI guessed correctly! The number was:", guess)
+            score = calculate_score(difficulty, num_guesses)
+            print(f"Congratulations! You scored {score} points!")
             break
     else:
         print("Sorry, the AI could not guess the correct number within the given number of guesses.")
+        print("Better luck next time!")
 
 if __name__ == "__main__":
     main()
