@@ -66,7 +66,7 @@ Requirements:
 
 1. Open your terminal and type:
 
-` git clone https://github.com/alyakbar/AI-Project`
+` git clone https://github.com/stevemats/AI_Guess_Game.git`
 
 2. Change directory to AI-Project where the script is:
 
@@ -74,13 +74,7 @@ Requirements:
 
 3. Run the script using the command:
 
-`python guess_the_numbe.py.`
-
-#### Customization:
-
-- You can customize the guessing range by adjusting the '_lower_bound_' and '_upper_bound_' variables
-  in the '_main()_' function.
-- Modify the time delays using _time.sleep()_ to change the pacing of the game.
+`python guess_the_number.py.`
 
 ---
 
@@ -122,8 +116,8 @@ Group C: Roy, Alyakbar, Martin, Steve & Omenke (reg.nos shared separately)
 //(_Additional Integrations you can add to this repo to practice contributing to OSS projects_)
 
 - ~Prompting users for there own range instead of having to go to script.~
-- Implementing different difficulty levels.
-- Limited guesses implementation.
+- ~Implementing different difficulty levels.~
+- ~Limited guesses implementation.~
 - Score tracking.
 - User-specified AI algorithm.
 - Time-based challenge.
