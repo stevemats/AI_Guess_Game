@@ -39,9 +39,13 @@ This Python script is a simple guessing game called "Guess the Number" In this g
    These bounds are set at the beginning of the main() function and can be adjusted to define the range for guessing.
 3. The AI will then make its first guess within the defined range.
 4. The user provides feedback to the AI by responding with one of the following options:
+
    <b>'H':</b> The guess is too high.
+
    <b>'L':</b> The guess is too low.
+
    <b>'C':</b> The AI guessed correctly.
+
 5. Based on the user's response, the AI will adjust its guessing strategy to narrow down the range for the next guess
    and continue the guessing process.
 6. The game will repeat the guessing and feedback process until the AI correctly guesses the user's number.
@@ -85,8 +89,11 @@ Requirements:
 - **AI Guessing**: The AI is capable of making guesses to determine the number the user is thinking of.
 
 - **Feedback Mechanism**: The user can provide feedback to the AI's guess, helping it to adjust its subsequent guesses. Feedback options include:
+
   'H': The guess is too high.
+
   'L': The guess is too low.
+
   'C': The AI guessed correctly.
 
 - **Customizable Range**: The game allows the user to define a custom range for guessing by setting the lower and upper bounds.
@@ -105,3 +112,7 @@ Requirements:
 ### Contribution:
 
 - Explain what you're working on by adding an issue before making any changes.
+
+#### Current Contributors:
+
+Group C: Roy, Alyakbar, Martin, Steve & Omenke (reg.nos shared separately)
