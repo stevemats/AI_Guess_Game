@@ -11,13 +11,31 @@ def get_user_feedback():
         user_response = input("Is the guess correct? (H/L/C): ").upper()
     return user_response
 
-def main():
-    lower_bound = 1  
-    upper_bound = 100  
+def get_range_from_user():
+    while True:
+        try:
+            lower_bound = int(input("Enter the lower bound of the range: "))
+            upper_bound = int(input("Enter the upper bound of the range: "))
+            if lower_bound >= upper_bound:
+                print("Invalid range. The lower bound must be less than the upper bound.")
+            else:
+                return lower_bound, upper_bound
+        except ValueError:
+            print("Invalid input. Please enter valid integers.")
 
+def main():
     print("Welcome to Guess the Number - AI Edition!")
+    print("Do you want to set the range of numbers for the AI to guess?")
+    user_input = input("Enter 'Y' for yes or 'N' for no: ").upper()
+
+    if user_input == "Y":
+        lower_bound, upper_bound = get_range_from_user()
+    else:
+        lower_bound = 1
+        upper_bound = 100
+
     print("Think of a number between", lower_bound, "and", upper_bound)
-    time.sleep(2)  # Pause for 2 seconds
+    time.sleep(2)  # Pause for 2 secs
     print("I will try to guess the number you are thinking of.")
     time.sleep(1)
     print("You only need to respond with 'H' if the guess is too high, 'L' if it's too low, and 'C' if I guessed correctly.")
