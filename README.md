@@ -107,10 +107,6 @@ Requirements:
 
 - Explain what you're working on by adding an issue before making any changes.
 
-#### Current Contributors:
-
-Group C: Roy, Alyakbar, Martin, Steve & Omenke (reg.nos shared separately)
-
 ### TO DO:
 
 //(_Additional Integrations you can add to this repo to practice contributing to OSS projects_)
@@ -118,7 +114,7 @@ Group C: Roy, Alyakbar, Martin, Steve & Omenke (reg.nos shared separately)
 - ~Prompting users for there own range instead of having to go to script.~
 - ~Implementing different difficulty levels.~
 - ~Limited guesses implementation.~
-- Score tracking.
+- ~Score tracking.~
 - User-specified AI algorithm.
 - Time-based challenge.
 - Customizable feedback instead of H,L, or C.
