@@ -1,5 +1,7 @@
 # AI project - (Guess the Number - AI Edition)
 
+```plaintext
+
 ⠀⠀⢀⣤⣶⣶⣤⣄⡀
 ⠀⢀⣿⣿⣿⣿⣿⣿⣿⡆
 ⠀⠸⣿⣿⣿⣿⣿⡟⡟⡗ ⣿⠉⣿⠉⣿⡏⠹⡏⢹⡏⢹⣿⣿⠉⣿⠉⣿⡟⢋⠛⣿⠉⡟⢉⡏⠹⠏⣹⣿
@@ -22,6 +24,7 @@
 ⠀⠀⠘⡇⣸⣿⣿⣿⣆
 ⠀⠀⠀⠀⠸⣿⡿⠉⠁
 ⠀⠀⠀⠀⠀⢿⡟
+```
 
 ## Introduction
 
@@ -32,13 +35,15 @@ This Python script is a simple guessing game called "Guess the Number" In this g
 ### How to Play The Game
 
 1. The game starts by displaying a welcome message, introducing the user to the game.
-2. The user is prompted to think of a number between a lower and an upper bound (inclusive). These bounds are set at the beginning of the main() function and can be adjusted to define the range for guessing.
+2. The user is prompted to think of a number between a lower and an upper bound (inclusive).
+   These bounds are set at the beginning of the main() function and can be adjusted to define the range for guessing.
 3. The AI will then make its first guess within the defined range.
 4. The user provides feedback to the AI by responding with one of the following options:
    <b>'H':</b> The guess is too high.
    <b>'L':</b> The guess is too low.
    <b>'C':</b> The AI guessed correctly.
-5. Based on the user's response, the AI will adjust its guessing strategy to narrow down the range for the next guess and continue the guessing process.
+5. Based on the user's response, the AI will adjust its guessing strategy to narrow down the range for the next guess
+   and continue the guessing process.
 6. The game will repeat the guessing and feedback process until the AI correctly guesses the user's number.
 
 Snap:
@@ -55,21 +60,25 @@ Requirements:
 
 #### Cloning & Running Script:
 
-Open your terminal and type:
+1. Open your terminal and type:
 
 ` git clone https://github.com/alyakbar/AI-Project`
 
-Change directory to AI-Project where the script is:
+2. Change directory to AI-Project where the script is:
+
 ` cd AI-Project`
 
-Run the script using the command:
+3. Run the script using the command:
 
 `python guess_the_numbe.py.`
 
-Customization:
+#### Customization:
 
-- You can customize the guessing range by adjusting the '_lower_bound_' and '_upper_bound_' variables in the '_main()_' function.
+- You can customize the guessing range by adjusting the '_lower_bound_' and '_upper_bound_' variables
+  in the '_main()_' function.
 - Modify the time delays using _time.sleep()_ to change the pacing of the game.
+
+---
 
 ### Features in this Guess Game:
 
@@ -90,6 +99,8 @@ Customization:
 
 - **Game Completion**: The game concludes when the AI successfully guesses the user's number and displays the correct guess along with a victory message.
 - **Error Handling**: The game handles invalid user inputs during feedback, prompting the user to re-enter a valid option until the correct input is provided.
+
+---
 
 ### Contribution:
 
