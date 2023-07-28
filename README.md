@@ -116,3 +116,19 @@ Requirements:
 #### Current Contributors:
 
 Group C: Roy, Alyakbar, Martin, Steve & Omenke (reg.nos shared separately)
+
+### TO DO:
+
+//(_Additional Integrations you can add to this repo to practice contributing to OSS projects_)
+
+- ~Prompting users for there own range instead of having to go to script.~
+- Implementing different difficulty levels.
+- Limited guesses implementation.
+- Score tracking.
+- User-specified AI algorithm.
+- Time-based challenge.
+- Customizable feedback instead of H,L, or C.
+- Two-player mode (AI can ask you to guess also).
+- Hint System.
+- Capability for non-techies to play with the game using e.g a GUI.
+- Sound Effects & More.
